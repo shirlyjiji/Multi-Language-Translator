@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -6,11 +7,22 @@ const Footer = () => {
       <div className="footer-container">
         {/* About Section */}
         <div className="footer-section about">
-          <h3>AI Translation Studio</h3>
-          <p>
-            Translate your eBooks into multiple languages while keeping structure and style.  
-            Export in DOCX, PDF, and EPUB formats seamlessly.
-          </p>
+          <Link className="navbar-brand d-flex align-items-center" to="/">
+            <img
+              src="/lang.png"
+              alt="AI Translation Studio Logo"
+              style={{
+                height: '55px',
+                width: '150px',
+                objectFit: "cover",
+                marginRight: '10px',
+                borderRadius: '6px',
+              }}
+            /></Link>
+            <p className="pt-3">
+              Translate your eBooks into multiple languages while keeping structure and style.
+              Export in DOCX, PDF, and EPUB formats seamlessly.
+            </p>
         </div>
 
         {/* Quick Links */}
