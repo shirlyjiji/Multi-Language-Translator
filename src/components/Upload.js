@@ -98,7 +98,7 @@ export default function Upload() {
                       <i className="fas fa-cloud-upload-alt"></i>
                     </div>
                     <h4>Upload Your Document</h4>
-                    <p>Supported formats: TXT, PDF, DOCX</p>
+                    <p>Supported formats: TXT</p>
                     {fileName && (
                       <div className="file-selected">
                         <i className="fas fa-file"></i>
